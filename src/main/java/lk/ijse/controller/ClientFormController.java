@@ -326,10 +326,7 @@ public class ClientFormController {
 
 
 
-    private String convertEmojiCode(String emojiCode) {
-        int codePoint = Integer.parseInt(emojiCode.substring(2), 16);
-        return new String(Character.toChars(codePoint));
-    }
+
 
     public void shutdown() {
         ServerFormController.receiveMessage(clientName+ "left");
